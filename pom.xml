@@ -49,6 +49,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>mic_email</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
