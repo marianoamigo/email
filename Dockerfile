@@ -1,5 +1,4 @@
 FROM openjdk:21-slim
-ARG JAR_FILE=deploy/email-0.0.1.jar
-COPY ${JAR_FILE} mic_email.jar
+COPY deploy/email-0.0.1.jar mic_email.jar
 EXPOSE 8082
 ENTRYPOINT ["java", "-jar", "mic_email.jar"]
