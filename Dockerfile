@@ -7,6 +7,6 @@ RUN mvn clean package -DskipTests
 # Etapa 2: correr solo el JAR
 FROM openjdk:21-slim
 WORKDIR /app
-COPY --from=build /app/target/email-0.0.1.jar mic_email.jar
+COPY --from=build /app/target/mic_email.jar mic_email.jar
 EXPOSE 8082
 ENTRYPOINT ["java", "-jar", "mic_email.jar"]
